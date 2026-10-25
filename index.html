@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Wedding of Aldi &amp; Nabilah </title>
+
+<!-- Bootstrap 5 -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap-icons.min.css">
+<!-- founts dari google  -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="locked">
+
+<div id="cover">
+  <div class="cover-frame">
+    <p class="cover-sub">The Wedding Of</p>
+    <h1 class="cover-name">Aldi <span>&amp;</span> Nabilah </h1>
+    <p class="cover-date">28 . 11 . 2027</p>
+    <hr class="cover-hr">
+    <p class="cover-to">Kepada Yth.<br>Bapak / Ibu / Saudara / i</p>
+    <p class="cover-guest" id="guestName">Tamu Undangan Terhormat</p>
+    <button class="btn-open" id="openBtn">
+      <i class="bi bi-envelope-open-heart me-2"></i>Buka Undangan
+    </button>
+  </div>
+</div>
+
+<audio id="bgMusic" loop preload="auto">
+  <source src="musick.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Tombol musik -->
+<button class="music-btn" id="musicBtn" title="Musik">
+  <i class="bi bi-music-note-beamed"></i>
+</button>
+
+<div id="main">
+
+  <! --- HOME --- >
+  <section id="home" class="hero">
+    <div class="container position-relative">
+      <p class="hero-script reveal">The Wedding Of</p>
+      <h1 class="hero-name reveal">Aldi <span>&amp;</span> Nabila </h1>
+      <p class="hero-date reveal">Minggua, 28 November 2027</p>
+      <p class="hero-tag reveal">Menuju Hari Bahagia</p>
+      <!--- hitungan mundur --->
+      <div class="countdown reveal" id="countdown">
+        <div class="cd-box"><div class="num" id="cd-d">00</div><div class="lbl">Hari</div></div>
+        <div class="cd-box"><div class="num" id="cd-h">00</div><div class="lbl">Jam</div></div>
+        <div class="cd-box"><div class="num" id="cd-m">00</div><div class="lbl">Menit</div></div>
+        <div class="cd-box"><div class="num" id="cd-s">00</div><div class="lbl">Detik</div></div>
+      </div>
+
+      <a href="#mempelai" class="scroll-down"><i class="bi bi-chevron-double-down"></i></a>
+    </div>
+  </section>
+
+  <section id="mempelai">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="script">Mempelai</span>
+        <h2>Calon Pengantin</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="row align-items-center justify-content-center g-4">
+
+        <!-- Pria -->
+        <div class="col-md-5">
+          <div class="couple-card reveal">
+            <div class="photo-wrap">
+              <img src="s2.jpg" alt="Mempelai Pria">
+            </div>
+            <h3 class="couple-name">Aldi Yoga Yalasena, Amd.</h3>
+            <p class="couple-parents">
+              Putra dari<br>
+              <b>Bapak Winarka</b><br>&amp;<br>
+              <b>Ibu Husnul Khotimah, Amd.</b>
+            </p>
+          </div>
+        </div>
+      
+        <div class="col-md-2">
+          <div class="amp reveal">&amp;</div>
+        </div>
+
+        <!-- Wanita -->
+        <div class="col-md-5">
+          <div class="couple-card reveal">
+            <div class="photo-wrap">
+              <img src="s1.jpg" alt="Mempelai Wanita">
+            </div>
+            <h3 class="couple-name">Nabilah Febrianti, S.KM.</h3>
+            <p class="couple-parents">
+              Putri dari<br>
+              <b>Bapak Puryoto</b><br>&amp;<br>
+              <b>Ibu Jumirah</b>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--  RANGKAIAN ACARA  -->
+  <section id="acara" style="background:rgba(6,15,33,.45);">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="script">Rangkaian</span>
+        <h2>Acara</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Akad Nikah -->
+        <div class="col-md-6 col-lg-5">
+          <div class="event-card reveal">
+            <div class="event-icon"><i class="bi bi-bookmark-heart"></i></div>
+            <h4 class="event-title">Akad Nikah</h4>
+            <p class="event-sub">Ijab Qabul</p>
+
+            <div class="event-row"><i class="bi bi-calendar-event"></i> Rabu, 24 November 2027</div>
+            <div class="event-row"><i class="bi bi-clock"></i> Pukul <b>09.00 WIB</b> – Selesai</div>
+            <div class="event-row">
+              <i class="bi bi-geo-alt"></i>
+                 Masjid Nasional Al-Akbar Surabaya<br>
+                Jl. Masjid Al Akbar Timur No.1,<br>Pagesangan, Jambangan, Surabaya
+             </div>
+
+            <a class="btn-maps"
+                href="https://maps.app.goo.gl/BY1SauTW4EiqNC32A"
+               target="_blank" rel="noopener">
+              <i class="bi bi-geo-alt-fill me-1"></i> Lihat Lokasi
+            </a>
+          </div>
+        </div>
+
+        <!-- Resepsi -->
+        <div class="col-md-6 col-lg-5">
+          <div class="event-card reveal">
+            <div class="event-icon"><i class="bi bi-cup-hot"></i></div>
+            <h4 class="event-title">Resepsi</h4>
+            <p class="event-sub">Walimatul 'Ursy</p>
+
+            <div class="event-row"><i class="bi bi-calendar-event"></i> Minggu, 28 November 2027</div>
+            <div class="event-row"><i class="bi bi-clock"></i> Pukul <b>18.00 – 22.00 WIB</b></div>
+            <div class="event-row">
+              <i class="bi bi-geo-alt"></i>
+              Gedung Bapra Kodikmar<br>
+              Jl. Jajartunggal Timur III Blok A No.3<br>Surabaya, Jawa Timur
+            </div>
+
+            <a class="btn-maps"
+               href="https://maps.app.goo.gl/SxuwtwGtsS5bT2Q38"
+               target="_blank" rel="noopener">
+              <i class="bi bi-geo-alt-fill me-1"></i> Lihat Lokasi
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--  KISAH KASIH  -->
+  <section id="kisah">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="script">Kisah</span>
+        <h2>Kasih Kami</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-year">2019</div>
+          <h5 class="tl-title">Pertemuan Pertama</h5>
+          <p class="tl-text">
+            Kami dipertemukan di sebuah acara kampus. Sebuah perkenalan sederhana
+            yang ternyata menjadi awal dari segalanya.
+          </p>
+        </div>
+
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-year">2022</div>
+          <h5 class="tl-title">Mulai Menjalin Kasih</h5>
+          <p class="tl-text">
+            Setelah tiga tahun saling mengenal, kami memutuskan untuk melangkah
+            bersama dan saling menguatkan dalam suka maupun duka.
+          </p>
+        </div>
+
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-year">2027</div>
+          <h5 class="tl-title">Lamaran &amp; Menuju Halal</h5>
+          <p class="tl-text">
+            Dengan restu kedua keluarga, kami mengikat janji untuk melangkah ke
+            jenjang yang lebih serius, menuju pernikahan yang sakral.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--  GALERI  -->
+  <section id="galeri" style="background:rgba(6,15,33,.45);">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="script">Momen</span>
+        <h2>Galeri</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g1.jpg" alt="Galeri 1">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g2.jpg" alt="Galeri 2">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g3.jpg" alt="Galeri 3">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g4.jpg" alt="Galeri 4">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g5.jpg" alt="Galeri 5">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g6.jpg" alt="Galeri 6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--  RSVP   -->
+  <section id="rsvp" style="background:rgba(6,15,33,.45);">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="script">Kehadiran</span>
+        <h2>RSVP</h2>
+        <div class="line"></div>
+      </div>
+      <div class="row justify-content-center">
+
+        <div class="col-md-8 col-lg-6">
+          <div class="rsvp-box reveal">
+            <h5><i class="bi bi-envelope-paper me-2"></i>Konfirmasi Kehadiran</h5>
+            <p class="sub">Mohon isi form di bawah ini untuk mengonfirmasi kehadiran Anda.</p>
+
+            <form id="rsvpForm">
+              <div class="mb-3">
+                <label class="form-label" for="inNama">Nama Lengkap</label>
+                <input type="text" class="form-control" id="inNama" placeholder="Masukkan nama Anda" required>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label" for="inHadir">Konfirmasi Kehadiran</label>
+                <select class="form-select" id="inHadir" required>
+                  <option value="" selected disabled>-- Pilih Kehadiran --</option>
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Hadir</option>
+                  <option value="Masih Ragu">Masih Ragu</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn-send">
+                <i class="bi bi-send-fill me-2"></i>Kirim Konfirmasi
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  FOOTER  -->
+  <footer>
+    <div class="footer-script">Aldi Yoga &amp; Nabilah Febrianti</div>
+    <p class="footer-text">
+      Merupakan suatu kebahagiaan dan kehormatan bagi kami<br>
+      apabila Bapak/Ibu/Saudara/i berkenan hadir.
+    </p>
+    <p class="footer-text" style="margin-top:18px; font-size:.75rem; color:rgba(201,206,214,.5);">
+      © 2027 Aldi  &amp; Nabilah  — Undangan Digital
+    </p>
+  </footer>
+
+</div>
+
+<!--  BOTTOM NAV  -->
+<nav class="bottom-nav">
+  <a href="#home" class="active"><i class="bi bi-house-door-fill"></i><span>Home</span></a>
+  <a href="#mempelai"><i class="bi bi-hearts"></i><span>Mempelai</span></a>
+  <a href="#acara"><i class="bi bi-calendar2-week"></i><span>Acara</span></a>
+  <a href="#kisah"><i class="bi bi-book-half"></i><span>Kisah</span></a>
+  <a href="#galeri"><i class="bi bi-images"></i><span>Galeri</span></a>
+  <a href="#rsvp"><i class="bi bi-chat-dots-fill"></i><span>RSVP</span></a>
+</nav>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- JS Sendiri -->
+<script src="script.js"></script>
+
+</body>
+</html>
