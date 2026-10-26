@@ -108,7 +108,7 @@ body.locked{overflow:hidden;height:100vh;padding-bottom:0;}
   to{opacity:1; transform:translateY(0);}
 }
 
-/*  MAIN WRAPPER  */
+/*  aniamsi muncul  */
 #main{opacity:0; transition:opacity 1.2s ease .2s;}
 #main.show{opacity:1;}
 
@@ -499,20 +499,3 @@ footer{
   transition:opacity .9s ease, transform .9s ease;
 }
 .reveal.visible{opacity:1; transform:translateY(0);}
-
-/* Toast */
-.toast-custom{
-  position:fixed;
-  left:50%; bottom:90px;
-  transform:translateX(-50%) translateY(20px);
-  background:linear-gradient(135deg,#d4af37,#f0d98c);
-  color:var(--navy);
-  padding:11px 26px;
-  border-radius:50px;
-  font-size:.82rem; font-weight:600;
-  z-index:9500;
-  opacity:0; pointer-events:none;
-  transition:.4s;
-  box-shadow:0 12px 30px rgba(212,175,55,.4);
-}
-.toast-custom.show{opacity:1; transform:translateX(-50%) translateY(0);}

@@ -1,4 +1,4 @@
-//  Buka Undangan Auto Play Musick //
+//  Buka Undangan  //
 const cover    = document.getElementById('cover');
 const main     = document.getElementById('main');
 const music    = document.getElementById('bgMusic');
@@ -78,7 +78,7 @@ function updateCountdown(){
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-//  Reveal Animasi  saat scroll //
+//  Reveal Animasi   //
 function initReveal(){
   const items = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(function(entries){
@@ -93,7 +93,7 @@ function initReveal(){
   items.forEach(function(el){ observer.observe(el); });
 }
 
-//  RSVP KONFIRMASI KEHADIRAN  // 
+//  RSVP   // 
 const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyQINtmFv9dtk1HLG3tZq0z0FyWJ3EoBYV-GKNijvTX4lTos0HWEdVeHrN-WHzKWE-I/exec';
 
 const rsvpForm = document.getElementById('rsvpForm');
@@ -112,7 +112,6 @@ if(rsvpForm){
       return;
     }
 
-    // Ubah tampilan tombol saat proses kirim
     btnSubmit.disabled = true;
     btnSubmit.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Mengirim...';
 
@@ -140,7 +139,6 @@ if(rsvpForm){
   });
 }
 
-// BOTTOM NAVBAR  //
 const navLinks = document.querySelectorAll('.bottom-nav a');
 const sections = document.querySelectorAll('section[id]');
 
@@ -152,7 +150,7 @@ navLinks.forEach(link => {
   });
 });
 
-// Efek otomatis halaman discroll //
+// animasi scroll halaman //
 window.addEventListener('scroll', function(){
   let current = '';
   const scrollPos = window.scrollY + 200;
